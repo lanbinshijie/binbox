@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>莫斯练习</title>
+</head>
+<body>
+    <div class="question-info">
+        <div class="left">
+            <a href="/index.html" class="btn-text back">&lt;&nbsp; 返回</a>
+        </div>
+        <div class="mid">
+            
+        </div>
+        <div class="right">
+            <p class="question-count">分享</p>
+        </div>
+    </div>
+    <div class="question-display">
+        <p class="question-intro">
+            Q<span id="qindex"></span>. 这是什么？
+        </p>
+        <p class="question" id="question">
+        -----
+        </p>
+    </div>
+    <div class="pick-router">
+        <button class="btn-primary" id="answer-btn-1">
+            <span class="option-title">A.</span>
+            <span class="option-content" id="option1">Letter Q</span>
+        </button>
+        <button class="btn-primary" id="answer-btn-2">
+            <span class="option-title">B.</span>
+            <span class="option-content" id="option2">Letter S</span>
+        </button>
+        <button class="btn-primary" id="answer-btn-3">
+            <span class="option-title">C.</span>
+            <span class="option-content" id="option3">Letter P</span>
+        </button>
+        <button class="btn-primary" id="answer-btn-4">
+            <span class="option-title">D.</span>
+            <span class="option-content" id="option4">Letter D</span>
+        </button>
+    </div>
+    <br><br><br>
+    <div class="pick-router">
+        <div>
+            <span class="btn-text" id="next" style="margin-right: 5px;">
+                Next >
+            </span>
+            <span class="btn-text" id="reset" >
+                Reset &
+            </span>
+        </div>
+    </div>
+    <footer>
+        <div id="padder"></div>
+        <div id="footer"></div>
+    </footer>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+<script src="./src/js/index.js"></script>
+<script>
+    initMemoryPage();
+</script>
+
+<script>
+    next_question();
+    // 设置导航栏激活状态
+    properActivation = 1
+</script>
+<script src="./compoents/footer.js"></script>
+</html>
